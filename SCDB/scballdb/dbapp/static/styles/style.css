@@ -1,0 +1,86 @@
+h1{
+    color: rgb(194, 78, 78);
+    font-size: xx-large;
+    margin-top: 4rem;
+    text-align: center;
+}
+div{
+font-family: 'Times New Roman', Times, serif;
+text-align: center;
+font-size: larger;
+font-variant-caps: all-petite-caps;
+color: rgb(194, 78, 78);
+margin-bottom: 20px;
+padding-right: 20px;
+margin-top: 2rem;
+    float:unset;
+
+}
+#topnav{
+    text-align: center;
+    width: 100%;
+    top:0;
+    left: 0;
+
+
+    background-color: rgb(138, 50, 50);
+    position: fixed;
+        float:unset;
+
+    
+       
+}
+.nav-link{
+    text-align:justify;
+    display: inline-block;
+    width: 100px;
+    height: 55px;
+    color: rgb(16, 5, 5);
+    text-align: center;
+    line-height: 55px;
+
+
+
+
+    text-decoration: none;
+}
+img{
+    height: 200px;
+    margin-top: 4rem;
+}
+#logo{
+    text-align: center;
+    width: 100%;
+    top:0;
+    left: 0;
+
+
+    background-color: rgb(138, 50, 50);
+    position: fixed;
+        float:unset;
+
+}
+#sub{
+    text-align: center;
+
+  
+}
+.box1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    font-size: large;
+ 
+
+}
+ 
+#img1{
+ height: max-content;
+ width: max-content;
+    margin-bottom: 20px;
+padding-right: 20px;
+margin-top: 2rem;
+    float:unset;
+ 
+}
+
+ 

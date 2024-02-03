@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bulldog Tenacity</title>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+</head>
+
+<body>
+    <div class="text">
+        <nav id="topnav">
+            <a href="{% static 'C:\Users\LHarew\SCDB\scballdb\dbapp\static\styles\download_360.png' %}"></a>
+            <a id="about" class="nav-link" href="{% url 'home' %}">Home</a>
+
+            {% csrf_token %}
+        </nav>
+        
+        <div class="body-content">
+            <img class="img1" src="{% static 'C:\Users\LHarew\SCDB\scballdb\dbapp\static\styles\team.jpg' %}" alt="team">
+            <img class="img1" src="{% static 'C:\Users\LHarew\SCDB\scballdb\dbapp\static\styles\me.jpg' %}" alt="me">
+            <img class="img1" src="{% static 'C:\Users\LHarew\SCDB\scballdb\dbapp\static\styles\3ofus.jpg' %}" alt="3ofus">
+            <p>Together we win!</p>
+        </div>
+      
+        
+        
+            
+            <a href="{% url 'logoutp' %}">Signout</a>
+            
+        </div> 
+
+        <h3>Content to follow!</h3>
+    
+    </div>
+    <h2>Your Form:</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+     
+        <input id="st"  type="submit" value="Submit"> 
+        <textarea        name="" id="" cols="15" rows="10">Submit feedback here! </textarea>
+    </form>
+</body>
+
+</html>

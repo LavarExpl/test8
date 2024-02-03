@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up!</title>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="{% static 'C:\Users\LHarew\SCDB\scballdb\dbapp\static\styles\download_360.png' %}" alt="Bulldog">
+    </div>
+
+    <nav id="topnav">
+        <a id="about" class="nav-link" href="{% url 'loginp' %}">Login</a>
+        <a id="about" class="nav-link" href="{% url 'register' %}">Sign-up</a>
+    </nav>
+
+    <h1 class="box1" style="height: 5px;">Registration Page:</h1>
+
+    <!-- Get username -->
+    <div id="reg">
+        {% if messages %}
+            {% for message in messages %}
+                <h2>{{ message }}</h2>
+            {% endfor %}
+        {% endif %}
+
+        <form action="#" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="box1">
+                <input type="text" placeholder="Create a username" required name="username">
+                <label for>Forgot username?</label>
+            </div>
+            <div class="box1">
+                <input type="text" placeholder="Enter your email" required name="email">
+                <label for>Forgot email?</label>
+            </div>
+            <div class="box1">
+                <input type="password" placeholder="Enter your passcode" required name="passcode">
+                <label>Forgot password?</label>
+            </div>
+            <div class="box1">
+                <!-- Add content for policy if needed -->
+            </div>
+            <div class="box1">
+                <input style="padding: 1px;" type="submit" value="Register!"> Do you have an account?
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
